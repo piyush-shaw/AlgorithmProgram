@@ -8,7 +8,7 @@ public class Program
         while (true)
         {
             Console.WriteLine("1.String Permutation \n2.Binary String Search \n3.Insertion Sort \n4.Bubble Sort \n5.Merge Sort \n6.Anagram Detection"
-                +"\n7.Print Prime Number");
+                +"\n7.Print Prime Number \n8.Check Prime Number i.e Anagram And Palindrome");
             Console.WriteLine("Enter a choice from above");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -40,6 +40,10 @@ public class Program
                 case 7:
                     //Calling the print prime number method
                     PrimeNumber.PrimeNumbers();
+                    break;
+                case 8:
+                    //Calling the print prime number i.e anagram and palindrome
+                    PrimeAnagramAndPalindrome.ChkPrNumAgPal();
                     break;
                 default:
                     Console.WriteLine("Please choice the correct option");
